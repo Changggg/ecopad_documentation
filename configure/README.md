@@ -27,9 +27,6 @@ Let us assume that the folder name of docker_host_data_directory is <my_cybercom
      `#mkdir spruce_data`
 
 
-
-
-
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          <my_cybercommons/teco_spruce/input> folder.These files are required to run the fortran code inside teco_spruce. 
  
     `# cp -r ../../../teco_spruce/input .`
@@ -41,3 +38,9 @@ Let us assume that the folder name of docker_host_data_directory is <my_cybercom
 8. Git clone ecopad_portal from github inside <my_cybercommons/data/static> folder.
  
     `# git clone https://github.com/ou-ecolab/ecopad_portal`
+
+9. Goto <my_cybercommons/celery> and creat an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
+
+    `# mkdir env`
+
+10. Add pandas to the requirment.txt inside <my_cybercommons/celery/code>.
