@@ -10,7 +10,7 @@ Prerequisite
    To learn more about docker and install it [click here](https://docs.docker.com/engine/installation/)
 
 2. Install cookiecutter
-   `# pip install cookiecutter`
+    * `# pip install cookiecutter`
 
 ##### Dependencies Requirements
 
