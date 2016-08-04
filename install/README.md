@@ -8,9 +8,7 @@ Prerequisite
 
 1. Inorder to install the cyberCommons platform,you first need to install docker.
 To learn more about docker and install it [click here](https://docs.docker.com/engine/installation/)
-
 2.Install cookiecutter
-
 `# pip install cookiecutter`
 
 
