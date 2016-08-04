@@ -19,7 +19,7 @@ in their local machine.
 
 1. To learn more about Installation [click here](https://github.com/ou-ecolab/ecopad_documentation/tree/master/install)
 
-2. To learn more about Configuration [click here]()
+2. To learn more about Configuration [click here](https://github.com/ou-ecolab/ecopad_documentation/tree/master/configure)
 
 3. To learn more about System Control [click here]()
 
