@@ -26,7 +26,6 @@ Let us assume that the folder name of docker_host_data_directory is <my_cybercom
 
      `#mkdir spruce_data`
 
-
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from <my_cybercommons/teco_spruce/input> folder.These files are required to run the fortran code inside teco_spruce. 
  
     `# cp -r ../../../teco_spruce/input .`
