@@ -44,3 +44,20 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     `# mkdir env`
 
 10. Add pandas to the requirment.txt inside （my_cybercommons/celery/code）.
+
+11. Create a config.py file in （my_cybercommons/celery/env/lib/python2.7/site-packages/ecopadq/tasks） folder.This file will contain username and password to download data from spruce_data website.
+
+    `# ftp_uername=<give username>`
+    
+    `# ftp_password=<give password>`
+
+12. Create a (default) folder inside ecotest/data/static/ecopad_tasks and copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
+
+    `# mkdir default`
+    
+    `# cp ../../../teco_spruce/output/Paraest.txt .`
+    
+    `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
+
+ 
+   
