@@ -7,9 +7,21 @@ Docker Configure
 -----------------
 
 1. Create a docker group
-     `#sudo groupadd docker`
 
-2. 
+      `# sudo groupadd docker`
+
+2. Add your username to the docker group.
+
+      ` # sudo usermod -aG docker <user_name> ` 
+      
+3. Run this command so that you don't need to restart your shell for the change to occur.
+
+      `# sg docker -c "bash"`
+
+System Configuration
+----------------------
+Note:- Don't run any of the following command as root user
+
 
 1. Git clone teco_spruce and teco_spruce_viz from github inside (my_cybercommons)
    
