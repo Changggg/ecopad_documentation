@@ -4,13 +4,13 @@ EcoPAD Documentation
 This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through :-
 
 
-    * installing the system in your machine
+         * installing the system in your machine
 
-    * configuring the system
+         * configuring the system
 
-    * System Control(Some troubleshooting concepts)
+         * System Control(Some troubleshooting concepts)
 
-    * Development(if you further want to develop the system)
+         * Development(if you further want to develop the system)
 
 
 We have divided this documentation into 4 parts so that it is like a cakewalk for anymone who wants to install and  use  this system 
