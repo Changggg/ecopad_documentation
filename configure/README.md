@@ -59,5 +59,29 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
     `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
 
+13. Now we need to create ssh keys which will create 3 files id_rsa,id_rsa.pub and known_hosts.From the id_rsa.pub file,we will again create another file known as authorizeed_keys.These keys are required to connect to the cybercommons platform.To create the keys type the following commands.
+
+    `# ssh-keygen`
+    
+    Press Enter for the first command ,don't type any paraphase for second and third commands.After that type the following command
+    
+    `# cat id_rsa.pub >> authorized_keys`
+
+14. Now go to （cybercommon/run/） and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental          variable host_data_dir in cybercom_up.
+    
+    `# vi cybercom_up`
+    
+   This is how the docker command of celery should exactly look like.
+
+    ``
+
+15. Now the configuration is almost complete.Now when we run the cybercom_up file.Everthing should work perfectly fine.Type the           following set of commands so that the system restart the docker containers.
+   
+    `# ./cybercom_up`
+
+    `# ./docker_restart`
+
+    `# ./cybercom_up`
+ 
  
    
