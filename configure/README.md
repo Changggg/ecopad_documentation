@@ -3,6 +3,14 @@ Configuration
 
 Let us assume that the folder name of docker_host_data_directory is (my_cybercommons) which you have named while installing the cyberCommons platform in our local machine.
 
+Docker Configure
+-----------------
+
+1. Create a docker group
+     `#sudo groupadd docker`
+
+2. 
+
 1. Git clone teco_spruce and teco_spruce_viz from github inside (my_cybercommons)
    
 
