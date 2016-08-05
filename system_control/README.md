@@ -9,9 +9,9 @@ If all the six containers are not running,then there is a problem with the docke
 
       `# docker ps -a`
       
-Under STATUS you will find EXITED written on it.The container_id corresponding IMAGE will give us an indication of what went wrong.Type the following command. 
+Under STATUS you will find EXITED written on it.The CONTAINER_ID corresponding to that IMAGE will give us an indication of what went wrong.Type the following command. 
       
-      `#docker logs container_id`
+      `#docker logs CONTAINER_ID`
       
 Sometimes checking the celery logs also can give the hint where the problem in our system is which is in ecopad/ecopad/celery/log folder.
 
