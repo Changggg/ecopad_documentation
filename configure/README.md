@@ -54,6 +54,8 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
      `# docker build -t ecopad_r .`
 
+#### Creating the spruce_data folder
+
 5. Goto （my_cybercommons/data/local） and create a folder spruce_data.
 
      `#mkdir spruce_data`
