@@ -1,12 +1,12 @@
 EcoPAD Documentation
 ===================
 
-Further development can be of two types:-
+This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through :-
    * Adding a new task to the existing model
     
    * Adding a new model
 
-This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through :-
+
   
     * installing the system in your machine
    
