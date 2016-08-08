@@ -1,10 +1,26 @@
 FURTHER DEVELOPMENT
 =====================
 
+
 Further development can be of two types:-
    * Adding a new task to the existing model
     
    * Adding a new model
+
+
+Note :- It's a very bad practice to modify existing working codes in github master branch and push it back to the master node again.
+
+    1. First create new branch ecopadq.Push codes to the new branch.This is done for version control. 
+
+    2. Create a new task with @task() method decorator
+
+    3. Within celery folder update requirements.txt to include ecopadq test branch instead of master
+
+    4. Restart system
+    
+    5. Check whether new or updated tasks works fine or not
+    
+    6. If everything goes well merge branch to master.
 
 Adding a new task to the existing model
 --------------------------------------------
