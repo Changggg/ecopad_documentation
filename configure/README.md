@@ -57,31 +57,31 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
      `#mkdir spruce_data`
 
-This folder will contain all the input files required the teco_spruce model.
+       This folder will contain all the input files required the teco_spruce model.
 
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （my_cybercommons/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
  
-    `# cp -r ../../../teco_spruce/input .`
+       `# cp -r ../../../teco_spruce/input .`
 
 7. Copy the initial.txt file from the server inside spruce_data.
  
-   `# scp -r <your username>@ecolab.cybercommons.org:/home/ecopad/ecopad/data/local/spruce_data/initial.txt .`
+       `# scp -r <your username>@ecolab.cybercommons.org:/home/ecopad/ecopad/data/local/spruce_data/initial.txt .`
 
-The initial.txt contains data from spruce website for year(2011-2015)
+       The initial.txt contains data from spruce website for year(2011-2015)
 
 8. Git clone ecopad_portal from github inside （my_cybercommons/data/static） folder.
  
-    `# git clone https://github.com/ou-ecolab/ecopad_portal`
+       `# git clone https://github.com/ou-ecolab/ecopad_portal`
 
-ecopad_portal contains the index.html along whith the api.js and template files which is the Grapical User Interface(GUI) of the system.
+       ecopad_portal contains the index.html along whith the api.js and template files which is the Grapical User Interface(GUI) of the system.
 
 9. Goto （my_cybercommons/celery） and creat an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
 
-    `# mkdir env`
+       `# mkdir env`
 
 10. Add pandas to the requirment.txt inside （my_cybercommons/celery/code）.
 
-Requirement.txt contains all the dependent libraries required to run run our system.Pandas is a python library which is used in the system to pull data from the spruce website.To learn more about pandas [click here](http://pandas.pydata.org/)
+       Requirement.txt contains all the dependent libraries required to run run our system.Pandas is a python library which is used in the system to pull data from the spruce website.To learn more about pandas [click here](http://pandas.pydata.org/)
 
 11. Create a config.py file in （my_cybercommons/celery/env/lib/python2.7/site-packages/ecopadq/tasks） folder.This file will contain username and password to download data from spruce_data website.
 
@@ -103,7 +103,7 @@ Requirement.txt contains all the dependent libraries required to run run our sys
 
     `# ssh-keygen`
     
-    Press Enter for the first command ,don't type any paraphase for second and third commands.After that type the following command
+       Press Enter for the first command ,don't type any paraphase for second and third commands.After that type the following command
     
     `# cat id_rsa.pub >> authorized_keys`
 
