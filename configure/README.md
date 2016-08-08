@@ -124,7 +124,8 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
        This is how the docker command of celery should exactly look like.
 
-    ``
+       
+       docker run -d --name ecotest_celery --link ecotest_rabbitmq --link ecotest_mongo -v /home/<username>/.ssh:/root/.ssh -v /home/<username>/<path_to_mycybercocommons>/celery/env:/env:z -v /home/yyhuang/Documents/ecotest/celery/code:/code:z -v /home/yyhuang/Documents/ecotest/celery/log:/log:z -v /home/yyhuang/Documents/ecotest/data:/data:z -e "host_data_dir=/home/yyhuang/Documents/ecotest/data" -e "docker_worker=$host_ip" -e "docker_username=$docker_username"  -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=8" cybercom/celery
 
 15. Now the configuration is almost complete.Now when we run the cybercom_up file.Everthing should work perfectly fine.Type the           following set of commands so that the system restart the docker containers.
    
