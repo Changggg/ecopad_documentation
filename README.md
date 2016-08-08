@@ -1,14 +1,19 @@
 EcoPAD Documentation
 ===================
 
-This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through:-
+Further development can be of two types:-
+   * Adding a new task to the existing model
+    
+   * Adding a new model
+
+This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through :-
   
     * installing the system in your machine
-
+   
     * configuring the system
-
+   
     * System Control(Some troubleshooting concepts)
-
+   
     * Development(if you further want to develop the system)
 
 
