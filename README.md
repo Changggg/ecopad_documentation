@@ -2,6 +2,9 @@ EcoPAD Documentation
 ===================
 
 This documetation is about installing the ecopad system in your local machine(preferably a linux machine ). This documentation will wake you through :-
+         * Adding a new task to the existing model
+    
+         * Adding a new model
         
          * installing the system in your machine
 
