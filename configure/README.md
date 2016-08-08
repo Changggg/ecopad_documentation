@@ -80,7 +80,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
        ecopad_portal contains the index.html along whith the api.js and template files which is the Grapical User Interface(GUI) of the system.
 
-#### Some additional configurations and creating authentication keys
+#### Some additional configurations 
 
 9. Goto （my_cybercommons/celery） and creat an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
 
@@ -104,7 +104,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
        `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
 
-
+#### Creating authentication keys
 
 13. Now we need to create ssh keys which will create 3 files id_rsa,id_rsa.pub and known_hosts.From the id_rsa.pub file,we will again create another file known as authorizeed_keys.These keys are required to connect to the cybercommons platform.To create the keys type the following commands.
 
