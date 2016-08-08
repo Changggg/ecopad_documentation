@@ -23,7 +23,7 @@ in their local machine.
 
 3. To learn more about System Control [click here](https://github.com/ou-ecolab/ecopad_documentation/tree/master/system_control)
 
-4. To learn more about Development [click here]()
+4. To learn more about Development [click here](https://github.com/ou-ecolab/ecopad_documentation/tree/master/development)
 
 
 
