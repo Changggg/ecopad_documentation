@@ -32,9 +32,9 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
      `# git clone https://github.com/ou-ecolab/teco_spruce_viz`
 
-teco_spruce folder contains the actual fortran code which runs the teco_spruce model.This folder also contains a DockerFile using which we can build an image of teco_spruce.
+       teco_spruce folder contains the actual fortran code which runs the teco_spruce model.This folder also contains a DockerFile using which we can build an image of teco_spruce.
 
-teco_spruce_viz contains the R code for the visualization of the generated graphs.This folder also contains a DockerFile using which we can build an image of teco_spruce_viz.
+       teco_spruce_viz contains the R code for the visualization of the generated graphs.This folder also contains a DockerFile using which we can build an image of teco_spruce_viz.
 
 
 2. Goto （my_cybercommons/teco_spruce/input） folder and copy the Weathergenerate folder from the server to this location. 
@@ -42,7 +42,7 @@ teco_spruce_viz contains the R code for the visualization of the generated graph
      `# scp -r <your username>@ecolab.cybercommons.org:/home/ecopad/ecopad/teco_spruce/input/Weathergenerate .`
 
 
-The Weathergenerate file is needed to build  the teco_spruce image.
+       The Weathergenerate file is needed to build  the teco_spruce image.
 
 
 3. Goto （my_cybercommons/teco_spruce） folder and inside it build teco_spruce image.
@@ -91,11 +91,13 @@ Requirement.txt contains all the dependent libraries required to run run our sys
 
 12. Create a (default) folder inside ecotest/data/static/ecopad_tasks and copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
 
-    `# mkdir default`
+       `# mkdir default`
     
-    `# cp ../../../teco_spruce/output/Paraest.txt .`
+       `# cp ../../../teco_spruce/output/Paraest.txt .`
     
-    `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
+       `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
+
+
 
 13. Now we need to create ssh keys which will create 3 files id_rsa,id_rsa.pub and known_hosts.From the id_rsa.pub file,we will again create another file known as authorizeed_keys.These keys are required to connect to the cybercommons platform.To create the keys type the following commands.
 
@@ -105,11 +107,13 @@ Requirement.txt contains all the dependent libraries required to run run our sys
     
     `# cat id_rsa.pub >> authorized_keys`
 
+       To run the system we need keys to communicate with the system.This is the reason why we create ssh keys.To learn more about ssh keys [click here](https://help.github.com/articles/generating-an-ssh-key/)
+
 14. Now go to （cybercommon/run/） and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental          variable host_data_dir in cybercom_up.
     
     `# vi cybercom_up`
     
-   This is how the docker command of celery should exactly look like.
+       This is how the docker command of celery should exactly look like.
 
     ``
 
