@@ -125,5 +125,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
     `# ./cybercom_up`
  
- After this open your browser and type 0.0.0.0/ecopad_portal.You should see the system running
+ After this open your browser and type 0.0.0.0/ecopad_portal.You should see the system running.
+ 
+ If you are facing some problems [click here](https://github.com/ou-ecolab/ecopad_documentation/tree/master/system_control) for some assistance.
    
