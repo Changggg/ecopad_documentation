@@ -24,6 +24,7 @@ Note:- Don't run any of the following command as root user
 
 Let us assume that the folder name of docker_host_data_directory is (my_cybercommons) which you have named while installing the cyberCommons platform in our local machine.
 
+#### Building the teco_spruce and teco_spruce_viz images
 
 1. Git clone teco_spruce and teco_spruce_viz from github inside (my_cybercommons)
    
