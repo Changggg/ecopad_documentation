@@ -72,11 +72,15 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
        The initial.txt contains data from spruce website for year(2011-2015)
 
+#### Downloading the frontend contents
+
 8. Git clone ecopad_portal from github inside （my_cybercommons/data/static） folder.
  
        `# git clone https://github.com/ou-ecolab/ecopad_portal`
 
        ecopad_portal contains the index.html along whith the api.js and template files which is the Grapical User Interface(GUI) of the system.
+
+#### Some additional configurations and creating authentication keys
 
 9. Goto （my_cybercommons/celery） and creat an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
 
@@ -111,6 +115,8 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     `# cat id_rsa.pub >> authorized_keys`
 
        To run the system we need keys to communicate with the system.This is the reason why we create ssh keys.To learn more about ssh keys [click here](https://help.github.com/articles/generating-an-ssh-key/)
+
+#### Configuring the cybercom_up file and running the system
 
 14. Now go to （cybercommon/run/） and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental          variable host_data_dir in cybercom_up.
     
