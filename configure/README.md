@@ -96,7 +96,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
     `# ftp_password=<give password>`
 
-12. Create a (default) folder inside ecotest/data/static/ecopad_tasks and copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
+12. Create a (default) folder inside （my_cybercommons/data/static/ecopad_tasks) and copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
 
        `# mkdir default`
     
