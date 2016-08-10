@@ -106,7 +106,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
 #### Allow ssh on port 22
 
-The following commands allows port 22 to accept ssh connections which is required to connect with the dockers
+The following commands allows port 22 to accept ssh connections in your local system which is required to connect with the dockers
 
        `# sudo apt-get update`
        
