@@ -104,6 +104,17 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
        `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
 
+#### Allow ssh on port 22
+
+The following commands allows port 22 to accept ssh connections which is required to connect with the dockers
+
+       `# sudo apt-get update`
+       
+       `# sudo apt-get install openssh-server`
+       
+       `# sudo ufw allow 22`
+
+
 #### Creating authentication keys
 
 13. Now we need to create ssh keys which will create 3 files id_rsa,id_rsa.pub and known_hosts.From the id_rsa.pub file,we will again create another file known as authorizeed_keys.These keys are required to connect to the cybercommons platform.To create the keys type the following commands.
