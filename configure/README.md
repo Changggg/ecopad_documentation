@@ -64,7 +64,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （my_cybercommons/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
  
-       `# cp -r ../../../teco_spruce/input .`
+       `# cp ../../../teco_spruce/input/* .`
 
 7. Copy the initial.txt file from the server inside spruce_data.
  
@@ -92,7 +92,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
 11. Create a config.py file in （my_cybercommons/celery/env/lib/python2.7/site-packages/ecopadq/tasks） folder.This file will contain username and password to download data from spruce_data website.
 
-    `# ftp_uername=<give username>`
+    `# ftp_username=<give username>`
     
     `# ftp_password=<give password>`
 
@@ -136,7 +136,7 @@ The following commands allows port 22 to accept ssh connections in your local sy
        This is how the docker command of celery should exactly look like.
 
        
-       `# docker run -d --name ecotest_celery --link ecotest_rabbitmq --link ecotest_mongo -v /home/<username>/.ssh:/root/.ssh -v /home/<username>/<path_to_mycybercocommons>/celery/env:/env:z -v /home/<username>/<path_to_mycybercocommons>/celery/code:/code:z -v /home/<username>/<path_to_mycybercocommons>/celery/log:/log:z -v /home/<username>/<path_to_mycybercocommons>/data:/data:z -e "host_data_dir=/home/<username>/<path_to_mycybercocommons>/data" -e "docker_worker=$host_ip" -e "docker_username=$docker_username"  -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=8" cybercom/celery`
+       `# docker run -d --name mycybercommons_celery --link mycybercommons_rabbitmq --link mycybercommons_mongo -v /home/<username>/.ssh:/root/.ssh -v /home/<username>/<path_to_mycybercommons>/celery/env:/env:z -v /home/<username>/<path_to_mycybercommons>/celery/code:/code:z -v /home/<username>/<path_to_mycybercommons>/celery/log:/log:z -v /home/<username>/<path_to_mycybercommons>/data:/data:z -e "host_data_dir=/home/<username>/<path_to_mycybercommons>/data" -e "docker_worker=$host_ip" -e "docker_username=$docker_username"  -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=8" cybercom/celery`
 
 15. Now the configuration is almost complete.Now when we run the cybercom_up file.Everthing should work perfectly fine.Type the           following set of commands so that the system restart the docker containers.
    
