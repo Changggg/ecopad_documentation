@@ -64,7 +64,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （my_cybercommons/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
  
-       `# cp ../../../teco_spruce/input/* .`
+       `# cp -r ../../../teco_spruce/input/* .`
 
 7. Copy the initial.txt file from the server inside spruce_data.
  
@@ -96,7 +96,11 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
     
     `# ftp_password=<give password>`
 
-12. Create a (default) folder inside （my_cybercommons/data/static/ecopad_tasks) and copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
+12. Create a (ecopad_tasks) folder inside （my_cybercommons/data/static) and inside it create a (default) folder  and inside (default) folder  copy Paraest.txt from （my_cybercommons/teco_spruce/output）and SPRUCE_da_pars.txt from （my_cybercommons/teco_spruce/input）
+    
+       `# mkdir ecopad_tasks`
+
+       `# cd ecopad_tasks `
 
        `# mkdir default`
     
