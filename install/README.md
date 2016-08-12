@@ -61,7 +61,7 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
 
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （application_short_name/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
  
-       `# cp -r ../../../teco_spruce/input/* .`
+       `# cp -r /path_to_application_short_name/teco_spruce/input/* .`
 
 7. Copy the initial.txt file from the server inside spruce_data.
  
@@ -99,6 +99,6 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
        
        `# cd default`
        
-       `# cp ../../../teco_spruce/output/Paraest.txt .`
+       `# cp /path_to_application_short_name/teco_spruce/output/Paraest.txt .`
     
-       `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
+       `# cp /path_to_application_short_name/teco_spruce/input/SPRUCE_da_pars.txt .`
