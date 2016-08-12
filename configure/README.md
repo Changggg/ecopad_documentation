@@ -48,8 +48,10 @@ The following commands allows port 22 to accept ssh connections in your local sy
 
 14. Now go to [[ /path_to_application_short_name//run/ ]] and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental variable host_data_dir in cybercom_up.
     
-    `# vi cybercom_up`
+       `# vi cybercom_up`
     
+       Change the second lines to the local machines ip-address
+
        This is how the docker command of celery should exactly look like.
 
        
