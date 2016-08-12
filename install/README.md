@@ -35,15 +35,27 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
        teco_spruce_viz contains the R code for the visualization of the generated graphs.This folder also contains a DockerFile using which we can build an image of teco_spruce_viz.
 
 
-2. Goto （application_short_name/teco_spruce/input） folder and copy the Weathergenerate folder from the server to this location. 
+2. Goto （application_short_name） folder and create a folder  [[spruce_data]] and go inside that folder and copy some important which will be required during the course of the installation. 
    
-     `# scp -r <your username>@ecolab.cybercommons.org:/home/ecopad/ecopad/teco_spruce/input/Weathergenerate .`
+     `# mkdir spruce_data`
 
+     `# cd spruce_data`
 
-       The Weathergenerate file is needed to build  the teco_spruce image.
+     `#  wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ `
+     
+3. Create a folder inside [[spruce_data]] folder and name it [[Weathergenerate]] and move all the csv file from [[spruce_data]] to it.
+     
+     `# mkdir Weathergenerate`
 
+     `# mv EMforcing* Weathergenerate/ `
+     
+     The Weathergenerate file is needed to build  the teco_spruce image.
 
-3. Goto （application_short_name/teco_spruce） folder and inside it build teco_spruce image.
+4. Goto [[application_short_name/teco_spruce]] folder and copy the Weathergenerate file into it.
+
+      `#cp -r path__to_application_short_name/spruce_data/Weathergenerate .`
+      
+3. Now inside the same folder  build teco_spruce image.
 
      `# docker build -t teco_spruce .`
 
