@@ -103,6 +103,7 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
       `# vi config.py`
       
       `#ftp_username="<username>"` 
+      
       `#ftp_password="<password>" `
  `
 
