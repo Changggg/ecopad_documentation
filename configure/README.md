@@ -50,7 +50,7 @@ The following commands allows port 22 to accept ssh connections in your local sy
     
        `# vi cybercom_up`
     
-       Change the second lines to the local machines ip-address
+       Change [[host_ip="to_your_local_machines_ip-address]]
 
        This is how the docker command of celery should exactly look like.
 
