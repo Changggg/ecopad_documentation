@@ -98,7 +98,13 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
 
        Requirement.txt contains all the dependent libraries required to run run our system.Pandas is a python library which is used in the system to pull data from the spruce website.To learn more about pandas [click here](http://pandas.pydata.org/)
 
-11. Inside [[application_short_name/celery/code]] create a folder  task_config and inside task_config create a file config.py. Cnfig.py contain the username and password required to pull data from spruce_data website.Inside 
+11. Inside [[application_short_name/celery/code]] create a folder  task_config and inside task_config create a file config.py. config.py contain the username and password required to pull data from spruce_data website.
+
+      `# vi config.py`
+      
+      `#ftp_username="<username>"` 
+      `#ftp_password="<password>" `
+ `
 
 12. Create a (ecopad_tasks) folder inside （application_short_name/data/static) and inside it create a (default) folder  and inside (default) folder  copy Paraest.txt from （application_short_name/teco_spruce/output）and SPRUCE_da_pars.txt from （application_short_name/teco_spruce/input）
     
