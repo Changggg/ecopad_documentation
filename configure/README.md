@@ -82,7 +82,7 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
 
 #### Some additional configurations 
 
-9. Goto （my_cybercommons/celery） and creat an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
+9. Goto （my_cybercommons/celery） and create an env folder inside it.This env folder will downland all the required dependecies and store in the local system so that you don't need to download again and again.
 
        `# mkdir env`
 
@@ -99,7 +99,9 @@ Let us assume that the folder name of docker_host_data_directory is (my_cybercom
        `# cd ecopad_tasks `
 
        `# mkdir default`
-    
+       
+       `# cd default`
+       
        `# cp ../../../teco_spruce/output/Paraest.txt .`
     
        `# cp ../../../teco_spruce/input/SPRUCE_da_pars.txt .`
@@ -141,6 +143,7 @@ The following commands allows port 22 to accept ssh connections in your local sy
        This will create some error but it will build the env folder. 
        
 11. Create a config.py file in （my_cybercommons/celery/env/lib/python2.7/site-packages/ecopadq/tasks） folder.This file will contain username and password to download data from spruce_data website.
+ (Nilutpal, please update here, you need to run ./docker_restart  ./cybercom_up before these folder shows up, not just after mount)
 
     `# ftp_username=<give username>`
     
