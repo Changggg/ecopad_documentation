@@ -21,16 +21,21 @@ EcoPAD Specific Installation
 ----------------------
 Note:- Don't run any of the following command as root user
 
-Let us assume that the folder name of docker_host_data_directory is [[application_short_name]] which you have named while installing the cyberCommons platform in our local machine.
+The cookiecutter installation will ask multiple question. To get the cyberCommons platform to work correctly, please double check the following variables. 
+1. <application_short_name> This is required and should not include spaces or special characters (The name is used for the application folder name).
+2. <docker_host_data_directory> This is the working or install directory that you ran the cookiecutter command.
+3. <docker_worker> This is the host that will run docker containers. Required when you use docker containers to execute task code.
+4. <docker_username> The <docker_worker> host username that has key setup to execute docker containers.
+
 
 #### Building the teco_spruce and teco_spruce_viz docker images
 
-1. Git clone teco_spruce and teco_spruce_viz from github inside [[application_short_name]]
+1. Git clone teco_spruce and teco_spruce_viz from github inside /path-to-application/<application_short_name>
    
 
-     `# git clone https://github.com/ou-ecolab/teco_spruce`
+     `$ git clone https://github.com/ou-ecolab/teco_spruce`
 
-     `# git clone https://github.com/ou-ecolab/teco_spruce_viz`
+     `$ git clone https://github.com/ou-ecolab/teco_spruce_viz`
 
        teco_spruce folder contains the actual fortran code which runs the teco_spruce model.This folder also contains a DockerFile using which we can build an image of teco_spruce.
 
