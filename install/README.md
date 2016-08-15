@@ -19,7 +19,6 @@ The cyberCommons platform can be installed using python cookiecutter library. Th
 
 EcoPAD Specific Installation
 ----------------------
-Note:- Don't run any of the following command as root user
 
 The cookiecutter installation will ask multiple question. To get the cyberCommons platform to work correctly, please double check the following variables. 
 
@@ -28,6 +27,7 @@ The cookiecutter installation will ask multiple question. To get the cyberCommon
 3. \<docker_worker\> This is the host that will run docker containers. Required when you use docker containers to execute task code.
 4. \<docker_username\> The <docker_worker> host username that has key setup to execute docker containers.
 
+Note:- Please adjust user permissions to run commands as a non root user.
 
 #### Building the teco_spruce and teco_spruce_viz docker images
 
