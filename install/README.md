@@ -23,10 +23,10 @@ Note:- Don't run any of the following command as root user
 
 The cookiecutter installation will ask multiple question. To get the cyberCommons platform to work correctly, please double check the following variables. 
 
-1. \<application_short_name/> This is required and should not include spaces or special characters (The name is used for the application folder name).
-2. /<docker_host_data_directory/> This is the working or install directory that you ran the cookiecutter command.
-3. /<docker_worker/> This is the host that will run docker containers. Required when you use docker containers to execute task code.
-4. /<docker_username/> The <docker_worker> host username that has key setup to execute docker containers.
+1. \<application_short_name\> This is required and should not include spaces or special characters (The name is used for the application folder name).
+2. \<docker_host_data_directory\> This is the working or install directory that you ran the cookiecutter command.
+3. \<docker_worker\> This is the host that will run docker containers. Required when you use docker containers to execute task code.
+4. \<docker_username\> The <docker_worker> host username that has key setup to execute docker containers.
 
 
 #### Building the teco_spruce and teco_spruce_viz docker images
