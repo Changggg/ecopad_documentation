@@ -79,7 +79,7 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
 
 7. Copy the initial.txt file from [[application_short_name/misc_data]] inside spruce_data.
  
-       `# cp -r /path_to_application/misc/initial.txt .`
+       `# cp -r /path_to_application/misc_data/initial.txt .`
 
        The initial.txt contains data from spruce website for year(2011-2015)
 
