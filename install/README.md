@@ -1,7 +1,7 @@
-Installation
+Installation - cyberCommons Platform
 ==============
 
-Inorder to install the cyberCommons platform on a single node,we need to do it through cookiecutter which is like a bash script to install the cyberCommons platform and link the various docker containers together.
+The cyberCommons platform can be installed using python cookiecutter library. The cookiecutter install will install the platform on a single node. The instructions within in this documentation is for installation on linux based system. Docker Beta for Mac and windows have not been throughly tested, but believe it works for Mac. I have not tried with the new Windows Docker Beta. 
 
 ##### Dependencies Requirements
 1. Install Docker
@@ -9,19 +9,21 @@ Inorder to install the cyberCommons platform on a single node,we need to do it t
    To learn more about docker and install it [click here](https://docs.docker.com/engine/installation/)
 
 2. Install cookiecutter
-    * `# pip install cookiecutter`
+    * $ pip install cookiecutter
 
 
-To the know more about cookiecutter and installing the cyberCommons platform [click here](https://github.com/cybercommons/cybercom-cookiecutter)
+##### cybercommons Install
+
+1. Cookiecutter installation of the cyberCommons platform [click here](https://github.com/cybercommons/cybercom-cookiecutter)
 
 
-More Specific Additional Installation
+EcoPAD Specific Installation
 ----------------------
 Note:- Don't run any of the following command as root user
 
 Let us assume that the folder name of docker_host_data_directory is [[application_short_name]] which you have named while installing the cyberCommons platform in our local machine.
 
-#### Building the teco_spruce and teco_spruce_viz images
+#### Building the teco_spruce and teco_spruce_viz docker images
 
 1. Git clone teco_spruce and teco_spruce_viz from github inside [[application_short_name]]
    
