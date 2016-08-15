@@ -31,7 +31,7 @@ The cookiecutter installation will ask multiple question. To get the cyberCommon
 
 #### Building the teco_spruce and teco_spruce_viz docker images
 
-1. Git clone teco_spruce and teco_spruce_viz from github inside /path-to-application/<application_short_name>
+1. Git clone teco_spruce and teco_spruce_viz from github inside /path-to-application/\<application_short_name\>
    
 
      `$ git clone https://github.com/ou-ecolab/teco_spruce`
