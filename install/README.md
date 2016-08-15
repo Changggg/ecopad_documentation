@@ -100,6 +100,10 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
 
 11. Inside [[application_short_name/celery/code]] create a folder  task_config and inside task_config create a file config.py. config.py contain the username and password required to pull data from spruce_data website.
 
+      `# mkdir task_config`
+      
+      `# cd task_config`
+      
       `# vi config.py`
       
       `#ftp_username="<username>"` 
