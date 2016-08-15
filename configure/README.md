@@ -55,7 +55,7 @@ The following commands allows port 22 to accept ssh connections in your local sy
        This is how the docker command of celery should exactly look like.
 
        
-       `# docker run -d --name application_short_name_celery --link application_short_name_rabbitmq --link application_short_name_mongo -v /home/<username>/.ssh:/root/.ssh -v /home/<username>/<path_to_application_short_name>/celery/env:/env:z -v /home/<username>/<path_to_application_short_name>/celery/code:/code:z -v /home/<username>/<path_to_application_short_name>/celery/log:/log:z -v /home/<username>/<path_to_application_short_name>/data:/data:z -e "host_data_dir=/home/<username>/<path_to_application_short_name>/data" -e "docker_worker=$host_ip" -e "docker_username=$docker_username"  -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=8" cybercom/celery`
+       `# docker run -d --name application_short_name_celery --link application_short_name_rabbitmq --link application_short_name_mongo -v /home/<username>/.ssh:/root/.ssh -v /home/<username>/<path_to_application_short_name>/celery/code:/code:z -v /home/<username>/<path_to_application_short_name>/celery/log:/log:z -v /home/<username>/<path_to_application_short_name>/data:/data:z -e "host_data_dir=/home/<username>/<path_to_application_short_name>/data" -e "docker_worker=$host_ip" -e "docker_username=$docker_username"  -e "C_FORCE_ROOT=true" -e "CELERY_CONCURRENCY=8" cybercom/celery`
        
        
        
