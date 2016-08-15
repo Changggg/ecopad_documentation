@@ -69,7 +69,7 @@ Let us assume that the folder name of docker_host_data_directory is [[applicatio
 
      `#mkdir spruce_data`
 
-       This folder will contain all the input files required the teco_spruce model.
+       This folder will contain all the input files required to run  the teco_spruce model.
 
 6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （application_short_name/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
  
