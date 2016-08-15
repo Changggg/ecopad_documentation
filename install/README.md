@@ -12,7 +12,7 @@ The cyberCommons platform can be installed using python cookiecutter library. Th
     * $ pip install cookiecutter
 
 
-##### cybercommons Install
+#### cybercommons Install
 
 1. Cookiecutter installation of the cyberCommons platform [click here](https://github.com/cybercommons/cybercom-cookiecutter)
 
