@@ -105,7 +105,6 @@ Note:- Please adjust user permissions to run commands as a non root user.
     
        `# mkdir ecopad_tasks`
 
-       `# cd ecopad_tasks `
 
        ` All the outputs of simulation,data simulation or forecasting will be generated inside this folder.`
        
