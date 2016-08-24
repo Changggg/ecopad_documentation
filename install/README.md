@@ -101,16 +101,12 @@ Note:- Please adjust user permissions to run commands as a non root user.
       `#ftp_password="<password>" `
  `
 
-12. Create a (ecopad_tasks) folder inside （application_short_name/data/static) and inside it create a (default) folder  and inside (default) folder  copy Paraest.txt from （application_short_name/teco_spruce/output）and SPRUCE_da_pars.txt from （application_short_name/teco_spruce/input）
+12. Create a (ecopad_tasks) folder inside （application_short_name/data/static) .
     
        `# mkdir ecopad_tasks`
 
        `# cd ecopad_tasks `
 
-       `# mkdir default`
+       ` All the outputs of simulation,data simulation or forecasting will be generated inside this folder.`
        
-       `# cd default`
        
-       `# cp /path_to_application_short_name/teco_spruce/output/Paraest.txt .`
-    
-       `# cp /path_to_application_short_name/teco_spruce/input/SPRUCE_da_pars.txt .`
