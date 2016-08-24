@@ -41,28 +41,6 @@ Note:- Please adjust user permissions to run commands as a non root user.
        teco_spruce folder contains the actual fortran code which runs the teco_spruce model.This folder also contains a DockerFile using which we can build an image of teco_spruce.
 
        teco_spruce_viz contains the R code for the visualization of the generated graphs.This folder also contains a DockerFile using which we can build an image of teco_spruce_viz.
-
-
-2. Goto （application_short_name） folder and create a folder  [[misc_data]] and go inside that folder and copy some important which will be required during the course of the installation. 
-   
-     `# mkdir misc_data`
-
-     `# cd misc_data`
-
-     `#  wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ `
-     
-3. Create a folder inside [[misc_data]] folder and name it [[Weathergenerate]] and move all the csv file from [[misc_data]] to it.
-     
-     `# mkdir Weathergenerate`
-
-     `# mv EMforcing* Weathergenerate/ `
-     
-     The Weathergenerate file is needed to build  the teco_spruce image.
-
-4. Goto [[application_short_name/teco_spruce/input]] folder and copy the Weathergenerate file into it.
-
-      `#cp -r path__to_application_short_name/misc_data/Weathergenerate .`
-      
 3. Goto [[application_short_name/teco_spruce]] and build the  teco_spruce image.
 
      `# docker build -t teco_spruce .`
@@ -73,23 +51,27 @@ Note:- Please adjust user permissions to run commands as a non root user.
 
 #### Creating the spruce_data folder
 
-5. Goto （application_short_name/data/local） and create a folder spruce_data.
+2. Goto （application_short_name/data/local） folder and create a folder  [[spruce_data]] and go inside that folder and copy some important which will be required during the course of the installation. 
+   
+     `# mkdir spruce_data`
 
-     `#mkdir spruce_data`
 
-       This folder will contain all the input files required to run  the teco_spruce model.
+      This folder will contain all the input files required to run  the teco_spruce model.
+      
+      
+     `# cd spruce_data`
 
-6. Inside spruce_data copy Weathergenerate folder,SPRUCE_da_pars.txt,SPRUCE_forcing.txt,SPRUCE_obs.txt and SPRUCE_pars.txt  from          （application_short_name/teco_spruce/input） folder.These files are required to run the fortran code inside teco_spruce. 
- 
-        `# cd spruce_data `
+     `#  wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ `
+     
+3. Create a folder inside [[spruce_data]] folder and name it [[Weathergenerate]] and move all the csv file from [[spruce_data]] to it.
+     
+     `# mkdir Weathergenerate`
 
-        `# cp -r /path_to_application_short_name/teco_spruce/input/* .`
+     `# mv EMforcing* Weathergenerate/ `
+     
+     The Weathergenerate file is needed to build  the teco_spruce image.
 
-7. Copy the initial.txt file from [[application_short_name/misc_data]] inside spruce_data.
- 
-       `# cp -r /path_to_application/misc_data/initial.txt .`
 
-       The initial.txt contains data from spruce website for year(2011-2015)
 
 #### Downloading the frontend contents
 
