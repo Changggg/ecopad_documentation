@@ -17,7 +17,7 @@ Sometimes checking the celery logs also can give the hint where the problem in o
 
       `#tail -f celery.log`
       
-Everytime you make some changes in the system,don't forget to restart the system.For that go to the \< path_to_application/application_short_name/run \> folder and run the following commands.
+Everytime you make some changes in the system,don't forget to restart the system.For that go to the                       \< path_to_application/application_short_name/run \> folder and run the following commands.
 
       `#./docker_restart`
       
