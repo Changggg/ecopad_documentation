@@ -17,7 +17,7 @@ Sometimes checking the celery logs also can give the hint where the problem in o
 
       `#tail -f celery.log`
       
-Everytime you make some changes in the system,don't forget to restart the system.For that go to the ecopad/ecopad/run folder and run the following commands.
+Everytime you make some changes in the system,don't forget to restart the system.For that go to the \< path_to_application/application_short_name/run \> folder and run the following commands.
 
       `#./docker_restart`
       
@@ -28,4 +28,4 @@ The ./docker_restart command kills all the docker containers and removes them fr
 For Server Adminstration(Not Local Machine)
 -------------------------------------------
 
-In the sever under [[/home/ecopad/ecopad/run]] folder ,there is file named upgrade_tasks.If you have done only some coding changes and for that no new library is required,then it is not mandatory to restart the entire system,instead you can just run the upgrade_tasks file which will delete only the ecopadq folder and reinstall that folder again.
+In the sever under \< /home/ecopad/ecopad/run \> folder ,there is file named upgrade_tasks.If you have done only some coding changes and for that no new library is required,then it is not mandatory to restart the entire system,instead you can just run the upgrade_tasks file which will delete only the ecopadq folder and reinstall that folder again.
