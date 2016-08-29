@@ -25,10 +25,10 @@ Note :- It's a very bad practice to modify existing working codes in github mast
 Adding a new task to the existing model
 --------------------------------------------
 
-Inorder to add a new task ,goto https://github.com/ou-ecolab/ecopadq/tree/master/ecopadq/tasks . Select the new branch and update the tasks.py and restart the system.If it works merge it to the master branch else try again.
+Inorder to add a new task ,goto https://github.com/ou-ecolab/ecopadq/tree/master/ecopadq/tasks . Select the new branch and update the tasks.py and restart the system . If it works merge it to the master branch else try again.
  
 
 Adding a new model
 ---------------------
 
-Inorder to add a new model,we first need to build the model and also a docker file which will contain all the path information of the inputs required for the model and also install all the dependency softwares required to run the model in the proper environment.
+Inorder to add a new model,we first need to build the model and also a docker file which will contain all the path information of the inputs required for the model and also install all the dependency softwares required to run the model in the proper environment.Then modify the tasks.py in https://github.com/ou-ecolab/ecopadq/tree/master/ecopadq/tasks and include the appropriate tasks and restart the system again. 
