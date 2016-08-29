@@ -41,17 +41,17 @@ Note:- Please adjust user permissions to run commands as a non root user.
        teco_spruce folder contains the actual fortran code which runs the teco_spruce model.This folder also contains a DockerFile using which we can build an image of teco_spruce.
 
        teco_spruce_viz contains the R code for the visualization of the generated graphs.This folder also contains a DockerFile using which we can build an image of teco_spruce_viz.
-3. Goto [[application_short_name/teco_spruce]] and build the  teco_spruce image.
+3. Goto \<application_short_name/teco_spruce\> and build the  teco_spruce image.
 
      `# docker build -t teco_spruce .`
 
-4. Goto （application_short_name/teco_spruce_viz） folder and inside it build ecopad_r image.
+4. Goto \<application_short_name/teco_spruce_viz\> folder and inside it build ecopad_r image.
 
      `# docker build -t ecopad_r .`
 
 #### Creating the spruce_data folder
 
-2. Goto （application_short_name/data/local） folder and create a folder  [[spruce_data]] and go inside that folder and copy some important which will be required during the course of the installation. 
+2. Goto \<application_short_name/data/local\> folder and create a folder  \<spruce_data\> and go inside that folder and copy some important which will be required during the course of the installation. 
    
      `# mkdir spruce_data`
 
@@ -63,7 +63,7 @@ Note:- Please adjust user permissions to run commands as a non root user.
 
      `#  wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ wget -r -np -nd --reject "index.html*" http://ecolab.cybercommons.org/misc/spruce_data/ `
      
-3. Create a folder inside [[spruce_data]] folder and name it [[Weathergenerate]] and move all the csv file from [[spruce_data]] to it.
+3. Create a folder inside \<spruce_data\> folder and name it \<Weathergenerate\> and move all the csv file from \<spruce_data\> to it.
      
      `# mkdir Weathergenerate`
 
@@ -75,7 +75,7 @@ Note:- Please adjust user permissions to run commands as a non root user.
 
 #### Downloading the frontend contents
 
-8. Git clone ecopad_portal from github inside （application_short_name/data/static） folder.
+8. Git clone ecopad_portal from github inside \<application_short_name/data/static\> folder.
  
        `# git clone https://github.com/ou-ecolab/ecopad_portal`
 
@@ -84,11 +84,11 @@ Note:- Please adjust user permissions to run commands as a non root user.
 #### Some additional configurations 
 
 
-10. Add pandas to the requirment.txt inside （application_short_name/celery/code）.
+10. Add pandas to the requirment.txt inside \<application_short_name/celery/code\>.
 
        Requirement.txt contains all the dependent libraries required to run run our system.Pandas is a python library which is used in the system to pull data from the spruce website.To learn more about pandas [click here](http://pandas.pydata.org/)
 
-11. Inside [[application_short_name/celery/code]] create a folder  task_config and inside task_config create a file config.py. config.py contain the username and password required to pull data from spruce_data website.
+11. Inside \<application_short_name/celery/code\> create a folder  task_config and inside task_config create a file config.py. config.py contain the username and password required to pull data from spruce_data website.
 
       `# mkdir task_config`
       
@@ -101,7 +101,7 @@ Note:- Please adjust user permissions to run commands as a non root user.
       `#ftp_password="<password>" `
  `
 
-12. Create a (ecopad_tasks) folder inside （application_short_name/data/static) .
+12. Create a \<ecopad_tasks\> folder inside \<application_short_name/data/static\> .
     
        `# mkdir ecopad_tasks`
 
