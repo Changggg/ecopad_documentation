@@ -23,7 +23,9 @@ Docker Configure
 
 #### Allow ssh on port 22
 
-The following commands allows port 22 to accept ssh connections in your local system which is required to connect with the dockers
+The following commands allows port 22 to accept ssh connections in your local system which is required to connect with the dockers.
+
+Note:- apt-get is an ubuntu command,if you are on a fedora system use yum.
 
        `# sudo apt-get update`
        
