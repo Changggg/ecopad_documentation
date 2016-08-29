@@ -48,7 +48,7 @@ Note:- apt-get is an ubuntu command,if you are on a fedora system use yum.
 
 #### Configuring the cybercom_up file and running the system
 
-14. Now go to  \<path_to_application_short_name/run \> and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental variable host_data_dir in cybercom_up.
+14. Now go to  \< path_to_application_short_name/run \> and open the file cybercom_up and in the celery part mount env,.ssh and add the environmental variable host_data_dir in cybercom_up.
     
        `# vi cybercom_up`
     
